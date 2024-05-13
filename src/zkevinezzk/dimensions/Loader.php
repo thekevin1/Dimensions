@@ -17,6 +17,7 @@ class Loader extends PluginBase {
     }
 
     public function onEnable(): void {
+        $this->getConfig()->save();
         Utils::startBlock();
         Utils::startItem();
 
